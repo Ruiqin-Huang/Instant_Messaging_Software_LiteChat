@@ -1,0 +1,41 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pic/keli.jpg</file>
+        <file>pic/logo.jpg</file>
+        <file>pic/purple.jpg</file>
+        <file>pic/green.jpg</file>
+        <file>pic/theychat-mini.png</file>
+        <file>pic/background.png</file>
+        <file>pic/background_1.png</file>
+        <file>pic/background_2.png</file>
+        <file>pic/background_4.png</file>
+        <file>pic/background_5.png</file>
+        <file>pic/background_6.jpg</file>
+        <file>pic/line.png</file>
+        <file>pic/line_1.png</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file>icon/addFri.jpg</file>
+        <file>icon/addgroup.jpg</file>
+        <file>icon/changeAccount.jpg</file>
+        <file>icon/exit.jpg</file>
+        <file>icon/makegroup.jpg</file>
+        <file>icon/personinfo.jpg</file>
+        <file>icon/refresh.png</file>
+        <file>icon/setFri.jpg</file>
+    </qresource>
+    <qresource prefix="/avatar">
+        <file>avatar/00.jpg</file>
+        <file>avatar/02.jpg</file>
+        <file>avatar/03.jpg</file>
+        <file>avatar/04.jpg</file>
+        <file>avatar/05.jpg</file>
+        <file>avatar/kelihead.jpg</file>
+    </qresource>
+    <qresource prefix="/emoji">
+        <file>emoji/loveeyes.png</file>
+        <file>emoji/smilingtears.png</file>
+        <file>emoji/sunglasses.png</file>
+        <file>emoji/wink.png</file>
+    </qresource>
+</RCC>

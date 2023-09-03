@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Interface</class>
+ <widget class="QWidget" name="Interface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>650</width>
+    <height>850</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="personal_information" native="true">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>591</width>
+     <height>141</height>
+    </rect>
+   </property>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>411</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="ip">
+       <property name="styleSheet">
+        <string notr="true">/* 设置QLineEdit为透明，隐藏边框 */
+QLineEdit {
+    background-color: transparent;
+    border: none;
+    border-style: hidden;
+    border-width: 0px;
+    border-color: transparent;
+    selection-background-color: transparent;
+    selection-color: black;
+}
+
+/* 禁用鼠标编辑 */
+QLineEdit[readOnly=&quot;true&quot;] {
+    /* 如果希望有一些视觉上的指示，可以添加其他样式，例如背景色 */
+    background-color: #FFFFFF; /* 用于只读状态的背景色 */
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="account">
+       <property name="styleSheet">
+        <string notr="true">/* 设置QLineEdit为透明，隐藏边框 */
+QLineEdit {
+    background-color: transparent;
+    border: none;
+    border-style: hidden;
+    border-width: 0px;
+    border-color: transparent;
+    selection-background-color: transparent;
+    selection-color: black;
+}
+
+/* 禁用鼠标编辑 */
+QLineEdit[readOnly=&quot;true&quot;] {
+    /* 如果希望有一些视觉上的指示，可以添加其他样式，例如背景色 */
+    background-color: #FFFFFF; /* 用于只读状态的背景色 */
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0">
+      <widget class="QLabel" name="account_label">
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>我的账号</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="nickname_label">
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>我的昵称</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="nickname">
+       <property name="styleSheet">
+        <string notr="true">/* 设置QLineEdit为透明，隐藏边框 */
+QLineEdit {
+    background-color: transparent;
+    border: none;
+    border-style: hidden;
+    border-width: 0px;
+    border-color: transparent;
+    selection-background-color: transparent;
+    selection-color: black;
+}
+
+/* 禁用鼠标编辑 */
+QLineEdit[readOnly=&quot;true&quot;] {
+    /* 如果希望有一些视觉上的指示，可以添加其他样式，例如背景色 */
+    background-color: #FFFFFF; /* 用于只读状态的背景色 */
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="ip_label">
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>个性签名</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QToolButton" name="info_set">
+    <property name="geometry">
+     <rect>
+      <x>430</x>
+      <y>50</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Microsoft YaHei</family>
+      <pointsize>-1</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QToolButton
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #f6d365, stop: 1 #fda085);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FFCC66; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:Bold 17px; /*字体*/
+    font-family: &quot;Microsoft YaHei&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+ 
+QToolButton:hover
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #fda085, stop: 1 #fee140);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FFCC66; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 17px; /*字体*/
+    font-family: &quot;Microsoft YaHei&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QToolButton:pressed
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #fda085, stop: 1 #43e97b);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FFCC66; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 17px; /*字体*/
+    font-family: &quot;Microsoft YaHei&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+
+
+
+</string>
+    </property>
+    <property name="text">
+     <string> 个人信息修改</string>
+    </property>
+    <property name="icon">
+     <iconset resource="../resource.qrc">
+      <normaloff>:/icon/icon/personinfo.jpg</normaloff>:/icon/icon/personinfo.jpg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>20</width>
+      <height>20</height>
+     </size>
+    </property>
+    <property name="toolButtonStyle">
+     <enum>Qt::ToolButtonTextBesideIcon</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>591</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/pic/background_2.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>591</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <zorder>label_4</zorder>
+   <zorder>label</zorder>
+   <zorder>gridLayoutWidget</zorder>
+   <zorder>info_set</zorder>
+  </widget>
+  <widget class="QToolButton" name="minimized">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>20</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>-</string>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="close">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>20</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>10</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>X</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="gridLayoutWidget_2">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>250</y>
+     <width>591</width>
+     <height>561</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="10" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QToolButton" name="create_group">
+        <property name="styleSheet">
+         <string notr="true">QToolButton
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #f6d365, stop: 1 #fda085);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FFCC66; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:Bold 17px; /*字体*/
+    font-family: &quot;Microsoft YaHei&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+ 
+QToolButton:hover
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #fda085, stop: 1 #fee140);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FFCC66; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 17px; /*字体*/
+    font-family: &quot;Microsoft YaHei&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QToolButton:pressed
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #fda085, stop: 1 #43e97b);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FFCC66; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 17px; /*字体*/
+    font-family: &quot;Microsoft YaHei&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string> 创建群聊</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/icon/icon/makegroup.jpg</normaloff>:/icon/icon/makegroup.jpg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextBesideIcon</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QToolButton" name="join_group">
+        <property name="styleSheet">
+         <string notr="true">QToolButton
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #f6d365, stop: 1 #fda085);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FFCC66; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:Bold 17px; /*字体*/
+    font-family: &quot;Microsoft YaHei&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+ 
+QToolButton:hover
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #fda085, stop: 1 #fee140);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FFCC66; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 17px; /*字体*/
+    font-family: &quot;Microsoft YaHei&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QToolButton:pressed
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #fda085, stop: 1 #43e97b);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FFCC66; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 17px; /*字体*/
+    font-family: &quot;Microsoft YaHei&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string> 加入群聊</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/icon/icon/addgroup.jpg</normaloff>:/icon/icon/addgroup.jpg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextBesideIcon</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="12" column="0">
+     <widget class="QListWidget" name="group_list">
+      <property name="styleSheet">
+       <string notr="true">/* 设置QListWidget整体样式 */
+QListWidget {
+    background-color: #ffffff; /* 背景颜色 */
+    border: 1px solid #ccc; /* 边框 */
+    padding: 5px; /* 内边距 */
+}
+
+/* 设置QListWidget中的列表项样式 */
+QListWidget::item {
+    background-color: #EED8AE; /* 列表项背景颜色 */
+    padding: 5px; /* 列表项内边距 */
+    border-bottom: 1px solid #ddd; /* 底部边框分隔线 */
+}
+
+/* 设置QListWidget中被选中的列表项样式 */
+QListWidget::item:selected {
+    background-color: #EEAD0E; /* 被选中的列表项背景颜色 */
+    color: #2B2B2B; /* 被选中的列表项文字颜色 */
+}
+
+/* 设置鼠标悬停在列表项上时的样式 */
+QListWidget::item:hover {
+    background-color: #EEC591;
+ /* 鼠标悬停时的背景颜色 */
+    color: #2B2B2B;
+}
+
+/* 设置QListWidget中的注释样式 */
+QListWidget::item::icon {
+    margin-right: 5px; /* 图标与文本之间的间距 */
+    font-size: 12px; /* 图标的字体大小 */
+    color: #2B2B2B; /* 图标的颜色 */
+}</string>
+      </property>
+      <property name="spacing">
+       <number>4</number>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QToolButton" name="add_delete_friend">
+        <property name="styleSheet">
+         <string notr="true">QToolButton
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #f6d365, stop: 1 #fda085);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FFCC66; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:Bold 17px; /*字体*/
+    font-family: &quot;Microsoft YaHei&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+ 
+QToolButton:hover
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #fda085, stop: 1 #fee140);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FFCC66; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 17px; /*字体*/
+    font-family: &quot;Microsoft YaHei&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QToolButton:pressed
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #fda085, stop: 1 #43e97b);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FFCC66; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 17px; /*字体*/
+    font-family: &quot;Microsoft YaHei&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+
+
+
+</string>
+        </property>
+        <property name="text">
+         <string> 添加好友</string>
+        </property>
+        <property name="icon">
+         <iconset resource="../resource.qrc">
+          <normaloff>:/icon/icon/addFri.jpg</normaloff>:/icon/icon/addFri.jpg</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+        <property name="toolButtonStyle">
+         <enum>Qt::ToolButtonTextBesideIcon</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_5">
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/pic/background_2.png);
+</string>
+      </property>
+      <property name="text">
+       <string>好友列表</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_3">
+      <property name="font">
+       <font>
+        <family>Microsoft YaHei</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/pic/background_2.png);</string>
+      </property>
+      <property name="text">
+       <string>群聊列表</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QListWidget" name="friend_list">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* 设置QListWidget整体样式 */
+QListWidget {
+    background-color: #ffffff; /* 背景颜色 */
+    border: 1px solid #ccc; /* 边框 */
+    padding: 5px; /* 内边距 */
+}
+
+/* 设置QListWidget中的列表项样式 */
+QListWidget::item {
+    background-color: #EED8AE; /* 列表项背景颜色 */
+    padding: 5px; /* 列表项内边距 */
+    border-bottom: 1px solid #ddd; /* 底部边框分隔线 */
+}
+
+/* 设置QListWidget中被选中的列表项样式 */
+QListWidget::item:selected {
+    background-color: #EEAD0E; /* 被选中的列表项背景颜色 */
+    color: #2B2B2B; /* 被选中的列表项文字颜色 */
+}
+
+/* 设置鼠标悬停在列表项上时的样式 */
+QListWidget::item:hover {
+    background-color: #EEC591;
+ /* 鼠标悬停时的背景颜色 */
+    color: #2B2B2B;
+}
+
+/* 设置QListWidget中的注释样式 */
+QListWidget::item::icon {
+    margin-right: 5px; /* 图标与文本之间的间距 */
+    font-size: 12px; /* 图标的字体大小 */
+    color: #2B2B2B; /* 图标的颜色 */
+}</string>
+      </property>
+      <property name="spacing">
+       <number>4</number>
+      </property>
+      <item>
+       <property name="text">
+        <string>123124123</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>12312412</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>21123124</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="styleSheet">
+       <string notr="true">border-image: url(:/pic/line_1.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>650</width>
+     <height>850</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/background.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="change_account">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>20</y>
+     <width>141</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #f6d365, stop: 1 #fda085);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FFCC66; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:Bold 20px; /*字体*/
+    font-family: &quot;Microsoft YaHei&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+ 
+QPushButton:hover
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #fda085, stop: 1 #fee140);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FFCC66; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 20px; /*字体*/
+    font-family: &quot;Microsoft YaHei&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+QPushButton:pressed
+{
+    color:#ffffff; /*文字颜色*/
+    background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop:0 #fda085, stop: 1 #43e97b);/*背景色*/
+    border-style:outset; /*边框风格*/
+    border-width:2px;/*边框宽度*/
+    border-color:#FFCC66; /*边框颜色*/
+    border-radius:10px; /*边框倒角*/
+    font:bold 20px; /*字体*/
+    font-family: &quot;Microsoft YaHei&quot;;
+    min-width:100px;/*控件最小宽度*/
+    min-height:20px;/*控件最小高度*/
+    padding:4px;/*内边距*/
+}
+
+
+
+</string>
+   </property>
+   <property name="text">
+    <string> 切换账号</string>
+   </property>
+   <property name="icon">
+    <iconset resource="../resource.qrc">
+     <normaloff>:/icon/icon/changeAccount.jpg</normaloff>:/icon/icon/changeAccount.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>20</width>
+     <height>20</height>
+    </size>
+   </property>
+   <property name="default">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>-10</y>
+     <width>101</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border-image: url(:/pic/theychat-mini.png);</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <zorder>label_8</zorder>
+  <zorder>personal_information</zorder>
+  <zorder>minimized</zorder>
+  <zorder>close</zorder>
+  <zorder>gridLayoutWidget_2</zorder>
+  <zorder>change_account</zorder>
+  <zorder>label_2</zorder>
+ </widget>
+ <resources>
+  <include location="../resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
